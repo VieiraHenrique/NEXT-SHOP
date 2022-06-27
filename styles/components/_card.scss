@@ -1,0 +1,22 @@
+.card {
+    background-color: $light-grey;
+    border-radius: 15px;
+    padding: 10%;
+    box-shadow: $shadow-light;
+    @include transition;
+    text-align: center;
+    cursor: pointer;
+
+    .cat {
+        @include p;
+        font-weight: 300;
+    }
+
+    h3 {
+        @include p;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
