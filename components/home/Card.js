@@ -1,12 +1,13 @@
-export default function Card({ product }) {
-
+export default function Card({ product, category }) {
     return (
         <div className="card">
-            
-            <span>{}</span>
+            <img src={product.image.data.attributes.url} alt="" />
+            <span className="cat">{category}</span>
             <h3>{product.name}</h3>
-            <p>{product.price} €</p>
-            <div className="btn btn-black">Add to cart</div>
+            <p className="price">{product.price} €</p>
+            <div className="btn btn-black">
+                View product
+            </div>
         </div>
     );
 }

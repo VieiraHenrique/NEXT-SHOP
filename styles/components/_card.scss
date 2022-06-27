@@ -13,7 +13,11 @@
     }
 
     h3 {
-        @include p;
+        @include typo(18px);
+    }
+
+    .price {
+        @include typo(16px);
     }
 
     &:hover {

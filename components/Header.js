@@ -26,16 +26,19 @@ export default function Header() {
                     <div className="wrapper">
                         <ul>
                             <li>
-                                <a href="#phones">Smartphones</a>
+                                <Link href={"/#smartphones"}>
+                                    <a>Smartphones</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#tablets">Tablets</a>
+                                <Link href={"/#tablets"}>
+                                    <a>Tablets</a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#headphones">Headphones</a>
-                            </li>
-                            <li>
-                                <a href="#laptops">Laptops</a>
+                                <Link href={"/#laptops"}>
+                                    <a>Laptops</a>
+                                </Link>
                             </li>
                             <li>
                                 <Link href={"/about"}>
